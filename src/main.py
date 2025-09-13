@@ -966,16 +966,16 @@ class AboutDialog:
         
         self.dialog = tk.Toplevel(parent)
         self.dialog.title(self.language_manager.t("dialogs.about.title"))
-        self.dialog.geometry("450x350")
+        self.dialog.geometry("490x350")
         self.dialog.resizable(False, False)
         self.dialog.transient(parent)
         self.dialog.grab_set()
         
         # Center dialog
         self.dialog.update_idletasks()
-        x = (self.dialog.winfo_screenwidth() // 2) - (430 // 2)
-        y = (self.dialog.winfo_screenheight() // 2) - (300 // 2)
-        self.dialog.geometry(f"450x350+{x}+{y}")
+        x = (self.dialog.winfo_screenwidth() // 2) - (490 // 2)
+        y = (self.dialog.winfo_screenheight() // 2) - (350 // 2)
+        self.dialog.geometry(f"490x350+{x}+{y}")
         
         self.setup_dialog()
         

@@ -1,0 +1,16 @@
+# 3D-Print CostCulator - Requirements
+# Python 3.8+ erforderlich
+
+reportlab>=4.0.0
+# Für PDF-Export
+
+Pillow>=8.0.0
+# Für Icon-Anzeige im About-Dialog (optional)
+
+# Standardbibliotheken (bereits in Python enthalten):
+# tkinter - GUI Framework
+# json - Projektverwaltung
+# os - Dateisystem-Operationen
+# datetime - Datum/Zeit-Handling
+# dataclasses - Datenstrukturen
+# typing - Type Hints

@@ -1,0 +1,237 @@
+{
+  "gui": {
+    "window_title": "3D-Print CostCulator v1.0",
+    "menu": {
+      "file": "Datei",
+      "new_project": "Neues Projekt",
+      "save_project": "Projekt speichern",
+      "load_project": "Projekt laden",
+      "export_pdf": "PDF exportieren",
+      "save_as": "Speichern unter...",
+      "project": "Projekt",
+      "exit": "Beenden",
+      "language": "Sprache",
+      "help": "Hilfe",
+      "about": "Über"
+    },
+    "project": {
+      "title": "Projekt-Informationen",
+      "name": "Projektname:",
+      "model": "3D-Modell Name:",
+      "model_count": "Anzahl Modelle:",
+      "print_duration": "Druckdauer gesamt (Stunden):"
+    },
+    "materials": {
+      "title": "Material-Auswahl",
+      "filament": "Filament:",
+      "amount": "Filament-Menge (g):",
+      "cost_per_kg": "Kosten pro kg (€):",
+      "add": "Hinzufügen",
+      "remove": "Entfernen"
+    },
+    "printer": {
+      "title": "Drucker-Auswahl",
+      "printer": "Drucker:",
+      "power": "Stromverbrauch (W):",
+      "add": "Hinzufügen",
+      "remove": "Entfernen"
+    },
+    "dryer": {
+      "title": "Trockner-Einstellungen",
+      "enable": "Trockner aktivieren",
+      "dryer": "Trockner:",
+      "power": "Stromverbrauch (W):",
+      "add": "Hinzufügen",
+      "remove": "Entfernen"
+    },
+    "electricity": {
+      "title": "Stromkosten",
+      "rate": "Strompreis (€/kWh):",
+      "wear_cost": "Verschleißkosten:"
+    },
+    "results": {
+      "title": "Kostenergebnis",
+      "calculate": "Kosten berechnen",
+      "individual_costs": "Einzelkosten:",
+      "total_costs": "Gesamtkosten:",
+      "total": "GESAMT:",
+      "material_cost": "• Materialkosten:",
+      "electricity_printer": "• Stromkosten Drucker:",
+      "electricity_dryer": "• Stromkosten Trockner:",
+      "wear_cost": "• Verschleißkosten:",
+      "cost_per_model": "Pro Modell:"
+    },
+    "buttons": {
+      "calculate": "Druckkosten Berechnen",
+      "export_pdf": "PDF Export",
+      "new_project": "Neues Projekt",
+      "add": "Hinzufügen",
+      "remove": "Entfernen",
+      "save": "Speichern",
+      "load": "Laden",
+      "cancel": "Abbrechen",
+      "ok": "OK"
+    },
+    "tooltips": {
+      "info_button": "Über diese Anwendung"
+    }
+  },
+  "dialogs": {
+    "filament": {
+      "title": "Neues Filament hinzufügen",
+      "name": "Filament Name:",
+      "cost": "Kosten (€/kg):",
+      "add_button": "Hinzufügen",
+      "cancel_button": "Abbrechen"
+    },
+    "printer": {
+      "title": "Neuen Drucker hinzufügen",
+      "name": "Drucker Name:",
+      "power": "Stromverbrauch (W):",
+      "add_button": "Hinzufügen",
+      "cancel_button": "Abbrechen"
+    },
+    "dryer": {
+      "title": "Neuen Trockner hinzufügen",
+      "name": "Trockner Name:",
+      "power": "Stromverbrauch (W):",
+      "add_button": "Hinzufügen",
+      "cancel_button": "Abbrechen"
+    },
+    "about": {
+      "title": "Über",
+      "description": "Ein professionelles Tool zur präzisen Berechnung der realen 3D-Druck-Kosten einschließlich Material, Stromverbrauch und Verschleißkosten. Entwickelt für Hobby- und professionelle Anwender.",
+      "homepage": "Homepage besuchen",
+      "donate": "Kaffee spendieren",
+      "source": "Quellcode ansehen",
+      "close": "Schließen",
+      "content": "3D-Druck Kostenrechner v1.0\n\nEin Tool zur Berechnung der realen Kosten eines 3D-Drucks\neinschließlich Material, Strom und Verschleiß.\n\nErstellt für: xscr33m\nDatum: September 2025"
+    }
+  },
+  "pdf": {
+    "title": "3D-DRUCK KOSTENVORANSCHLAG",
+    "project_info": "PROJEKTINFORMATIONEN",
+    "cost_breakdown": "KOSTENAUFSCHLÜSSELUNG",
+    "cost_summary": "KOSTENZUSAMMENFASSUNG",
+    "parameters": {
+      "parameter": "PARAMETER",
+      "value": "WERT",
+      "additional_info": "ZUSÄTZLICHE INFORMATIONEN",
+      "project_name": "Projektname",
+      "model": "3D-Modell",
+      "print_duration": "Druckdauer",
+      "printer": "Drucker",
+      "material": "Material",
+      "dryer": "Trockner",
+      "electricity_rate": "Strompreis",
+      "not_used": "Nicht verwendet",
+      "total_for": "gesamt",
+      "for_models": "für {count} Modell{plural}",
+      "power": "Leistung: {power}W",
+      "amount": "Menge: {amount}g ({price}€/kg)",
+      "date": "Datum"
+    },
+    "costs": {
+      "position": "KOSTENPOSITION",
+      "calculation": "BERECHNUNG",
+      "amount": "BETRAG",
+      "material_costs": "Materialkosten",
+      "electricity_printer": "Stromkosten Drucker",
+      "electricity_dryer": "Stromkosten Trockner",
+      "wear_maintenance": "Verschleiß & Wartung",
+      "wear_breakdown": "Aufschlüsselung der Verschleißkosten:",
+      "mechanical_wear": "Mechanischer Verschleiß",
+      "time_wear": "Zeitbasierter Verschleiß",
+      "electronic_wear": "Elektronischer Verschleiß",
+      "mechanical_wear_calc": "0,01% der Materialkosten pro Gramm Filament",
+      "time_wear_calc": "0,05 € pro Stunde Druckzeit",
+      "electronic_wear_calc": "0,5% der Stromkosten",
+      "total_costs": "GESAMTKOSTEN",
+      "cost_per_model": "Kosten pro Modell",
+      "percentage_of_total": "ANTEIL AM GESAMTPREIS"
+    },
+    "footer": "Kostenvoranschlag für 3D-Druck-Projekt • Alle Angaben sind Näherungswerte basierend auf den eingegebenen Parametern<br/>Erstellt mit 3D-Druck Kostenrechner v1.0 • Datum: {date}"
+  },
+  "messages": {
+    "success": {
+      "title": "Erfolg",
+      "filament_added": "Filament '{name}' wurde hinzugefügt.",
+      "printer_added": "Drucker '{name}' wurde hinzugefügt.",
+      "dryer_added": "Trockner '{name}' wurde hinzugefügt.",
+      "project_saved": "Projekt wurde gespeichert.",
+      "project_loaded": "Projekt wurde geladen.",
+      "pdf_exported": "PDF wurde exportiert: {filename}",
+      "project_save_error": "Projekt konnte nicht gespeichert werden:\n{error}",
+      "project_load_error": "Projekt konnte nicht geladen werden:\n{error}",
+      "pdf_creation_error": "PDF konnte nicht erstellt werden:\n{error}"
+    },
+    "error": {
+      "title": "Fehler",
+      "invalid_input": "Bitte korrigieren Sie folgende Eingaben",
+      "name_required": "Bitte geben Sie einen Namen ein.",
+      "cost_required": "Bitte geben Sie einen gültigen Preis ein.",
+      "power_required": "Bitte geben Sie einen gültigen Stromverbrauch ein.",
+      "project_name_required": "Projektname ist erforderlich",
+      "model_name_required": "3D-Modell Name ist erforderlich",
+      "model_count_invalid": "Anzahl Modelle muss größer als 0 sein",
+      "print_duration_invalid": "Druckdauer muss größer als 0 sein",
+      "filament_amount_invalid": "Filamentmenge muss größer als 0 sein",
+      "electricity_rate_invalid": "Strompreis muss größer als 0 sein",
+      "calculation_error": "Fehler bei der Kostenberechnung",
+      "save_error": "Fehler beim Speichern des Projekts",
+      "load_error": "Fehler beim Laden des Projekts",
+      "pdf_error": "Fehler beim PDF-Export",
+      "select_filament_first": "Bitte wählen Sie zuerst ein Filament aus der Liste aus.",
+      "select_printer_first": "Bitte wählen Sie zuerst einen Drucker aus der Liste aus.",
+      "select_dryer_first": "Bitte wählen Sie zuerst einen Trockner aus der Liste aus.",
+      "filament_exists": "Filament '{name}' existiert bereits.",
+      "printer_exists": "Drucker '{name}' existiert bereits.",
+      "dryer_exists": "Trockner '{name}' existiert bereits."
+    },
+    "validation": {
+      "negative_value": "{field} kann nicht negativ sein",
+      "required_field": "{field} ist erforderlich",
+      "invalid_number": "Ungültige Zahl in {field}"
+    },
+    "confirmation": {
+      "remove_filament_title": "Filament entfernen",
+      "remove_filament_message": "Möchten Sie das Filament '{name}' wirklich entfernen?",
+      "remove_printer_title": "Drucker entfernen",
+      "remove_printer_message": "Möchten Sie den Drucker '{name}' wirklich entfernen?",
+      "remove_dryer_title": "Trockner entfernen",
+      "remove_dryer_message": "Möchten Sie den Trockner '{name}' wirklich entfernen?",
+      "new_project_title": "Neues Projekt",
+      "new_project_message": "Aktuelles Projekt verwerfen und neues erstellen?",
+      "pdf_created_title": "PDF erstellt",
+      "pdf_created_message": "PDF wurde erstellt:\n{filepath}\n\nMöchten Sie die Datei öffnen?"
+    }
+  },
+  "file_dialogs": {
+    "load_project_title": "Projekt laden",
+    "save_project_title": "Projekt speichern unter",
+    "export_pdf_title": "PDF exportieren",
+    "json_files": "JSON Dateien",
+    "pdf_files": "PDF Dateien",
+    "all_files": "Alle Dateien",
+    "unnamed": "Unbenannt",
+    "cost_calculation": "Kostenberechnung"
+  },
+  "status": {
+    "ready": "Bereit",
+    "calculating": "Berechnung läuft...",
+    "please_calculate": "-- Bitte berechnen --",
+    "calculation_complete": "✅ Berechnung abgeschlossen - Gesamtkosten: {cost} €",
+    "calculation_error": "❌ Fehler bei der Berechnung",
+    "new_project_created": "Neues Projekt erstellt",
+    "project_loaded": "Projekt geladen: {filename}",
+    "project_saved": "Projekt gespeichert: {filename}",
+    "pdf_exported": "PDF exportiert: {filename}"
+  },
+  "euro": "€",
+  "kwh": "€/kWh",
+  "watts": "W",
+  "hours": "h",
+  "grams": "g",
+  "kg": "kg",
+  "pieces": "Stück"
+}

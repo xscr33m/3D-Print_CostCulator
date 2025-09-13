@@ -1,0 +1,239 @@
+{
+  "gui": {
+    "window_title": "3D-Print CostCulator v1.0",
+    "menu": {
+      "file": "File",
+      "new_project": "New Project",
+      "save_project": "Save Project",
+      "load_project": "Load Project",
+      "export_pdf": "Export PDF",
+      "save_as": "Save As...",
+      "project": "Project",
+      "exit": "Exit",
+      "language": "Language",
+      "help": "Help",
+      "about": "About"
+    },
+    "project": {
+      "title": "Project Information",
+      "name": "Project Name:",
+      "model": "3D Model Name:",
+      "model_count": "Number of Models:",
+      "print_duration": "Total Print Duration (hours):"
+    },
+    "materials": {
+      "title": "Material Selection",
+      "filament": "Filament:",
+      "amount": "Filament Amount (g):",
+      "cost_per_kg": "Cost per kg (€):",
+      "add": "Add",
+      "remove": "Remove"
+    },
+    "printer": {
+      "title": "Printer Selection",
+      "printer": "Printer:",
+      "power": "Power Consumption (W):",
+      "add": "Add",
+      "remove": "Remove"
+    },
+    "dryer": {
+      "title": "Dryer Settings",
+      "enable": "Enable Dryer",
+      "dryer": "Dryer:",
+      "power": "Power Consumption (W):",
+      "add": "Add",
+      "remove": "Remove"
+    },
+    "electricity": {
+      "title": "Electricity Costs",
+      "rate": "Electricity Rate (€/kWh):",
+      "wear_cost": "Wear & Maintenance:"
+    },
+    "results": {
+      "title": "Cost Results",
+      "calculate": "Calculate Costs",
+      "individual_costs": "Individual Costs:",
+      "total_costs": "Total Costs:",
+      "total": "TOTAL:",
+      "material_cost": "• Material Costs:",
+      "electricity_printer": "• Printer Electricity:",
+      "electricity_dryer": "• Dryer Electricity:",
+      "wear_cost": "• Wear & Maintenance:",
+      "cost_per_model": "Cost per Model:"
+    },
+    "buttons": {
+      "calculate": "Calculate Print Costs",
+      "export_pdf": "Export PDF",
+      "new_project": "New Project",
+      "add": "Add",
+      "remove": "Remove",
+      "save": "Save",
+      "load": "Load",
+      "cancel": "Cancel",
+      "ok": "OK"
+    },
+    "tooltips": {
+      "info_button": "About this application"
+    }
+  },
+  "dialogs": {
+    "filament": {
+      "title": "Add New Filament",
+      "name": "Filament Name:",
+      "cost": "Cost (€/kg):",
+      "add_button": "Add",
+      "cancel_button": "Cancel"
+    },
+    "printer": {
+      "title": "Add New Printer",
+      "name": "Printer Name:",
+      "power": "Power Consumption (W):",
+      "add_button": "Add",
+      "cancel_button": "Cancel"
+    },
+    "dryer": {
+      "title": "Add New Dryer",
+      "name": "Dryer Name:",
+      "power": "Power Consumption (W):",
+      "add_button": "Add",
+      "cancel_button": "Cancel"
+    },
+    "about": {
+      "title": "About",
+      "description": "A professional tool for precise calculation of real 3D printing costs including materials, electricity consumption, and wear costs. Designed for hobby and professional users.",
+      "homepage": "Visit Homepage",
+      "donate": "Buy me a coffee",
+      "source": "View Source Code",
+      "close": "Close",
+      "content": "3D Print CostCulator v1.0\n\nA tool for calculating the real costs of 3D printing\nincluding materials, electricity, and wear.\n\nCreated for: xscr33m\nDate: September 2025"
+    }
+  },
+  "pdf": {
+    "title": "3D PRINTING COST ESTIMATE",
+    "project_info": "PROJECT INFORMATION",
+    "cost_breakdown": "COST BREAKDOWN",
+    "cost_summary": "COST SUMMARY",
+    "parameters": {
+      "parameter": "PARAMETER",
+      "value": "VALUE",
+      "additional_info": "ADDITIONAL INFORMATION",
+      "project_name": "Project Name",
+      "model": "3D Model",
+      "print_duration": "Print Duration",
+      "printer": "Printer",
+      "material": "Material",
+      "dryer": "Dryer",
+      "electricity_rate": "Electricity Rate",
+      "not_used": "Not Used",
+      "total_for": "total",
+      "for_models": "for {count} model{plural}",
+      "power": "Power: {power}W",
+      "amount": "Amount: {amount}g ({price}€/kg)",
+      "date": "Date"
+    },
+    "costs": {
+      "position": "COST POSITION",
+      "calculation": "CALCULATION",
+      "amount": "AMOUNT",
+      "material_costs": "Material Costs",
+      "electricity_printer": "Printer Electricity",
+      "electricity_dryer": "Dryer Electricity",
+      "wear_maintenance": "Wear & Maintenance",
+      "wear_breakdown": "Wear cost breakdown:",
+      "mechanical_wear": "Mechanical Wear",
+      "time_wear": "Time-based Wear",
+      "electronic_wear": "Electronic Wear",
+      "mechanical_wear_calc": "0.01% of material costs per gram of filament",
+      "time_wear_calc": "0.05 € per hour of print time",
+      "electronic_wear_calc": "0.5% of electricity costs",
+      "total_costs": "TOTAL COSTS",
+      "cost_per_model": "Cost per Model",
+      "percentage_of_total": "PERCENTAGE OF TOTAL"
+    },
+    "footer": "Cost estimate for 3D printing project • All values are approximations based on entered parameters<br/>Created with 3D Print CostCulator v1.0 • Date: {date}"
+  },
+  "messages": {
+    "success": {
+      "title": "Success",
+      "filament_added": "Filament '{name}' has been added.",
+      "printer_added": "Printer '{name}' has been added.",
+      "dryer_added": "Dryer '{name}' has been added.",
+      "project_saved": "Project has been saved.",
+      "project_loaded": "Project has been loaded.",
+      "pdf_exported": "PDF has been exported: {filename}",
+      "project_save_error": "Project could not be saved:\n{error}",
+      "project_load_error": "Project could not be loaded:\n{error}",
+      "pdf_creation_error": "PDF could not be created:\n{error}"
+    },
+    "error": {
+      "title": "Error",
+      "invalid_input": "Please correct the following inputs",
+      "name_required": "Please enter a name.",
+      "cost_required": "Please enter a valid price.",
+      "power_required": "Please enter a valid power consumption.",
+      "project_name_required": "Project name is required",
+      "model_name_required": "3D model name is required",
+      "model_count_invalid": "Number of models must be greater than 0",
+      "print_duration_invalid": "Print duration must be greater than 0",
+      "filament_amount_invalid": "Filament amount must be greater than 0",
+      "electricity_rate_invalid": "Electricity rate must be greater than 0",
+      "calculation_error": "Error during cost calculation",
+      "save_error": "Error saving project",
+      "load_error": "Error loading project",
+      "pdf_error": "Error exporting PDF",
+      "select_filament_first": "Please select a filament from the list first.",
+      "select_printer_first": "Please select a printer from the list first.",
+      "select_dryer_first": "Please select a dryer from the list first.",
+      "filament_exists": "Filament '{name}' already exists.",
+      "printer_exists": "Printer '{name}' already exists.",
+      "dryer_exists": "Dryer '{name}' already exists."
+    },
+    "validation": {
+      "negative_value": "{field} cannot be negative",
+      "required_field": "{field} is required",
+      "invalid_number": "Invalid number in {field}"
+    },
+    "confirmation": {
+      "remove_filament_title": "Remove Filament",
+      "remove_filament_message": "Do you really want to remove the filament '{name}'?",
+      "remove_printer_title": "Remove Printer",
+      "remove_printer_message": "Do you really want to remove the printer '{name}'?",
+      "remove_dryer_title": "Remove Dryer",
+      "remove_dryer_message": "Do you really want to remove the dryer '{name}'?",
+      "new_project_title": "New Project",
+      "new_project_message": "Discard current project and create a new one?",
+      "pdf_created_title": "PDF Created",
+      "pdf_created_message": "PDF has been created:\n{filepath}\n\nWould you like to open the file?"
+    }
+  },
+  "file_dialogs": {
+    "load_project_title": "Load Project",
+    "save_project_title": "Save Project As",
+    "export_pdf_title": "Export PDF",
+    "json_files": "JSON Files",
+    "pdf_files": "PDF Files",
+    "all_files": "All Files",
+    "unnamed": "Unnamed",
+    "cost_calculation": "Cost Calculation"
+  },
+  "status": {
+    "ready": "Ready",
+    "calculating": "Calculating...",
+    "please_calculate": "-- Please Calculate --",
+    "calculation_complete": "✅ Calculation complete - Total cost: {cost} €",
+    "calculation_error": "❌ Calculation error",
+    "new_project_created": "New project created",
+    "project_loaded": "Project loaded: {filename}",
+    "project_saved": "Project saved: {filename}",
+    "pdf_exported": "PDF exported: {filename}"
+  },
+  "units": {
+    "euro": "€",
+    "kwh": "€/kWh",
+    "watts": "W",
+    "hours": "h",
+    "grams": "g",
+    "kg": "kg",
+    "pieces": "pieces"
+  }
+}

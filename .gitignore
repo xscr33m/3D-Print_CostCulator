@@ -1,0 +1,4 @@
+release/
+*/__pycache__/
+src/language_config.json
+.vscode/settings.json

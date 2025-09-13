@@ -475,15 +475,16 @@ class PDFExporter:
             # PROJECT INFORMATION
             story.append(Paragraph(language_manager.t("pdf.project_info"), subtitle_style))
             
-            # Determine plural form for models
-            model_plural = "s" if project.model_count != 1 else ""
+            # Determine correct translation for model count
+            models_text_key = "pdf.parameters.for_models_singular" if project.model_count == 1 else "pdf.parameters.for_models_plural"
+            models_text = language_manager.t(models_text_key, count=project.model_count)
             dryer_info = language_manager.t("pdf.parameters.not_used") if not project.dryer_enabled else f"{language_manager.t('pdf.parameters.power', power=project.dryer_power)}"
             
             project_data = [
                 [language_manager.t("pdf.parameters.parameter"), language_manager.t("pdf.parameters.value"), language_manager.t("pdf.parameters.additional_info")],
                 [language_manager.t("pdf.parameters.project_name"), project.project_name, ''],
                 [language_manager.t("pdf.parameters.model"), project.model_name, ""],
-                [language_manager.t("pdf.parameters.print_duration"), f"{project.print_duration:.1f}h {language_manager.t('pdf.parameters.total_for')}", language_manager.t("pdf.parameters.for_models", count=project.model_count, plural=model_plural)],
+                [language_manager.t("pdf.parameters.print_duration"), f"{project.print_duration:.1f}h {language_manager.t('pdf.parameters.total_for')}", models_text],
                 [language_manager.t("pdf.parameters.printer"), project.printer_name, language_manager.t("pdf.parameters.power", power=project.printer_power)],
                 [language_manager.t("pdf.parameters.material"), project.filament_name, language_manager.t("pdf.parameters.amount", amount=project.filament_amount, price=project.filament_cost_per_kg)],
                 [language_manager.t("pdf.parameters.dryer"), project.dryer_name if project.dryer_enabled else language_manager.t("pdf.parameters.not_used"), dryer_info],
@@ -602,13 +603,12 @@ class PDFExporter:
                 total_data.append([language_manager.t("pdf.costs.electricity_dryer"), f"{project.electricity_cost_dryer:.2f} €", f"{(project.electricity_cost_dryer/project.total_cost*100):.1f}%"])
             
             # Determine unit text for pieces
-            pieces_text = language_manager.t("units.pieces")
+            for_x_pieces_text = language_manager.t("units.for_x_pieces", count=project.model_count)
             
             total_data.extend([
                 [language_manager.t("pdf.costs.wear_maintenance"), f"{project.wear_cost:.2f} €", f"{(project.wear_cost/project.total_cost*100):.1f}%"],
-                ['', '', ''],  # Separation line
                 [language_manager.t("pdf.costs.total_costs"), f"{project.total_cost:.2f} €", '100.0%'],
-                [language_manager.t("pdf.costs.cost_per_model"), f"{(project.total_cost/project.model_count):.2f} €", f"for {project.model_count} {pieces_text}"],
+                [language_manager.t("pdf.costs.cost_per_model"), f"{(project.total_cost/project.model_count):.2f} €", for_x_pieces_text],
             ])
             
             total_table = Table(total_data, colWidths=[6*cm, 5*cm, 6*cm])

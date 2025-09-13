@@ -126,7 +126,8 @@
       "electricity_rate": "Electricity Rate",
       "not_used": "Not Used",
       "total_for": "total",
-      "for_models": "for {count} model{plural}",
+      "for_models_singular": "for {count} model",
+      "for_models_plural": "for {count} models",
       "power": "Power: {power}W",
       "amount": "Amount: {amount}g ({price}€/kg)",
       "date": "Date"
@@ -234,6 +235,7 @@
     "hours": "h",
     "grams": "g",
     "kg": "kg",
-    "pieces": "pieces"
+    "pieces": "pieces",
+    "for_x_pieces": "for {count} pieces"
   }
 }

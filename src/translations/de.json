@@ -126,7 +126,8 @@
       "electricity_rate": "Strompreis",
       "not_used": "Nicht verwendet",
       "total_for": "gesamt",
-      "for_models": "für {count} Modell{plural}",
+      "for_models_singular": "für {count} Modell",
+      "for_models_plural": "für {count} Modelle",
       "power": "Leistung: {power}W",
       "amount": "Menge: {amount}g ({price}€/kg)",
       "date": "Datum"
@@ -233,5 +234,9 @@
   "hours": "h",
   "grams": "g",
   "kg": "kg",
-  "pieces": "Stück"
+  "pieces": "Stück",
+  "units": {
+    "pieces": "Stück",
+    "for_x_pieces": "für {count} Stück"
+  }
 }

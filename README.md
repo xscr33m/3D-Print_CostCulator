@@ -1,6 +1,6 @@
 [![Pricing](https://img.shields.io/badge/Price-Free-green?style=for-the-badge&color=green)](https://github.com/xscr33m/3D-Print_CostCulator/)
 [![Downloads](https://img.shields.io/github/downloads/xscr33m/3D-Print_CostCulator/total?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/releases)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/xscr33m/3D-Print_CostCulator/master?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/commits/master/)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/xscr33m/3D-Print_CostCulator/main?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/commits/main/)
 [![GitHub License](https://img.shields.io/github/license/xscr33m/3D-Print_CostCulator?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/)
 [![Discord](https://img.shields.io/discord/1102440447835648124?style=for-the-badge&label=Discord&color=gold)](https://discord.gg/5CrDj8ba6C)
 

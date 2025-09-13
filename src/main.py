@@ -1012,7 +1012,7 @@ class AboutDialog:
                 app_title.grid(row=1, column=0, columnspan=2, pady=(0, 5))
             else:
                 # Fallback without icon
-                app_title = ttk.Label(main_frame, text="🖨️ 3D-Print CostCulator", 
+                app_title = ttk.Label(main_frame, text="3D-Print CostCulator", 
                                      font=("Arial", 16, "bold"))
                 app_title.grid(row=0, column=0, columnspan=2, pady=(0, 10))
         except Exception:

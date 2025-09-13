@@ -56,7 +56,7 @@ def create_executable():
         sys.executable, "-m", "PyInstaller",  # Use python -m PyInstaller instead of direct pyinstaller
         "--onefile",                    # Single executable file
         "--windowed",                   # No console window (GUI app)
-        "--name=3D-Print-CostCulator",  # Name of the executable
+        "--name=3D-Print_CostCulator",  # Name of the executable
         "--distpath=release",           # Output directory
         "--workpath=build_temp",        # Temporary build directory
         "--specpath=build_config",      # Spec file location
@@ -113,7 +113,7 @@ def create_executable():
     try:
         subprocess.check_call(cmd)
         print("✓ Executable created successfully!")
-        print("📁 Location: release/3D-Print-CostCulator.exe")
+        print("📁 Location: release/3D-Print_CostCulator.exe")
         return True
     except subprocess.CalledProcessError as e:
         print(f"❌ Build failed: {e}")
@@ -152,7 +152,7 @@ def main():
     if create_executable():
         print("\n🎉 Build completed successfully!")
         print("Your executable is ready for distribution:")
-        print("📦 File: release/3D-Print-CostCulator.exe")
+        print("📦 File: release/3D-Print_CostCulator.exe")
         print("💾 Size: ~20-50MB (includes Python + all dependencies)")
         print("🚀 Ready for distribution - no Python installation required!")
         

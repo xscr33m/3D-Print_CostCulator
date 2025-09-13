@@ -1,7 +1,7 @@
-[![Pricing](https://img.shields.io/badge/Price-Free-green?style=for-the-badge&color=green)](https://github.com/xscr33m/3D-Print-CostCulator/)
-[![Downloads](https://img.shields.io/github/downloads/xscr33m/3D-Print-CostCulator/total?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print-CostCulator/releases)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/xscr33m/3D-Print-CostCulator/master?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print-CostCulator/commits/master/)
-[![GitHub License](https://img.shields.io/github/license/xscr33m/3D-Print-CostCulator?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print-CostCulator/)
+[![Pricing](https://img.shields.io/badge/Price-Free-green?style=for-the-badge&color=green)](https://github.com/xscr33m/3D-Print_CostCulator/)
+[![Downloads](https://img.shields.io/github/downloads/xscr33m/3D-Print_CostCulator/total?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/releases)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/xscr33m/3D-Print_CostCulator/master?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/commits/master/)
+[![GitHub License](https://img.shields.io/github/license/xscr33m/3D-Print_CostCulator?style=for-the-badge&color=gold)](https://github.com/xscr33m/3D-Print_CostCulator/)
 [![Discord](https://img.shields.io/discord/1102440447835648124?style=for-the-badge&label=Discord&color=gold)](https://discord.gg/5CrDj8ba6C)
 
 <div align="center">
@@ -57,7 +57,7 @@ View this document in your preferred language:
 #### Option 1: Pre-built Executable (Recommended)
 
 1. Download the latest release from the `release/` folder
-2. Run `3D-Print-CostCulator.exe` directly
+2. Run `3D-Print_CostCulator.exe` directly
 3. No additional installation required
 
 #### Option 2: Run from Source
@@ -192,7 +192,7 @@ Der 3D-Print CostCulator ist eine umfassende Desktop-Anwendung zur präzisen Ber
 #### Option 1: Vorgefertigte Anwendung (Empfohlen)
 
 1. Neueste Version aus dem `release/` Ordner herunterladen
-2. `3D-Print-CostCulator.exe` direkt ausführen
+2. `3D-Print_CostCulator.exe` direkt ausführen
 3. Keine weitere Installation erforderlich
 
 #### Option 2: Aus Quellcode ausführen
